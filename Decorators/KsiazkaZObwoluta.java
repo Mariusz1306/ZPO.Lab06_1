@@ -12,7 +12,7 @@ public class KsiazkaZObwoluta extends KsiazkaDekorator {
         if ((String.valueOf(dekorowanaKsiazka.getClass()).startsWith("class Decorators.KsiazkaZObwoluta")))
             throw new JednaObwolutaException("Ksiazka moze miec tylko jedna obwolute");
         if (!(String.valueOf(dekorowanaKsiazka.getClass()).startsWith("class Decorators.KsiazkaZOkladka")))
-            throw new BrakOkladkiException(" Nie mozna oblozyc obwoluta ksiazki, ktora nie posiada okladki");
+            throw new BrakOkladkiException("Nie mozna oblozyc obwoluta ksiazki, ktora nie posiada okladki");
         this.posiadaObwolute = true;
     }
 
